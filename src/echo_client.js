@@ -2,7 +2,7 @@
 import fetch from 'node-fetch'
 
 async function callEchoTool() {
-  const response = await fetch('http://localhost:4000/mcp', {
+  const response = await fetch('https://my-models-mcp-production.up.railway.app/mcp', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
