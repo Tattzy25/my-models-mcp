@@ -117,7 +117,8 @@ app.listen(PORT, () => {
 });
 
 // Base URL for the storagecloud API
-const API_URL = process.env.MCP_API_URL || "https://api.storagecloud.com";
+const API_URL =
+  process.env.MCP_API_URL || "http://my-models-mcp-production.up.railway.app/mcp";
 
 // Helper function for making storagecloud API requests
 async function makeStorageCloudRequest<T>(
