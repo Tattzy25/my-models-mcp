@@ -1,12 +1,13 @@
 {
-  "name": "modelcontext-express",
+  "name": "my-models-mcp",
   "private": true,
   "type": "module",
   "license": "MIT",
   "version": "1.0.0",
-  "description": "An example of using ModelContext with Express",
+  "description": "backend mcp connection for my models",
   "scripts": {
-    "dev": "node --loader ts-node/esm src/index.ts"
+    "dev": "node --loader ts-node/esm src/index.ts",
+    "start": "pnpm dev"
   },
   "engines": {
     "node": ">=18.0.0"
