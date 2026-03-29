@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "description": "backend mcp connection for my models",
   "scripts": {
-    "dev": "node --loader ts-node/esm src/index.ts",
+    "dev": "node --import 'data:text/javascript,import { register } from \"node:module\"; import { pathToFileURL } from \"node:url\"; register(\"ts-node/esm\", pathToFileURL(\"./\"));' src/index.ts",
     "start": "pnpm dev"
   },
   "engines": {
